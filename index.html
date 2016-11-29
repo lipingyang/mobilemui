@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<title>鼎永科技</title>
+		<link rel="stylesheet" href="style/css/mui.min.css">
+		<link rel="stylesheet" href="style/css/index.css" />
+		<link rel="stylesheet" href="style/css/base.css" />
+		<script src="style/js/mui.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+		<div class="logo"></div>
+		<div id="slider" class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="style/img/indexFive.png">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="style/img/indexOne.png" height="">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="style/img/indexTwo.png">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="style/img/indexThree.png">
+					</a>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="style/img/indexFour.png">
+					</a>
+				</div>
+				<!-- 第五张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="style/img/indexFive.png">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="style/img/indexOne.png">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+
+		<!--四个盒子-->
+		<div class="content-box">
+			<a href="cultureAmend.html">
+				<div class="enterprise-culture fl">
+					<div class="txt fr">
+						<p>
+							<span class="f-22">企</span><span class="f-14">业文化</span>
+
+						</p>
+						<p class="f-8">Enterprise culture</p>
+					</div>
+				</div>
+			</a>
+			<a href="product.html">
+				<div class="product-center fr">
+					<div class="txt fr">
+						<p>
+							<span class="f-22">产</span><span class="f-14">品中心</span>
+
+						</p>
+						<p class="f-8">Product Center</p>
+					</div>
+				</div>
+			</a>
+			<a href="case.html">
+				<div class="case-sharing fl">
+					<div class="txt fr">
+						<p>
+							<span class="f-22">案</span><span class="f-14">例分享</span>
+
+						</p>
+						<p class="f-8">Case sharing</p>
+					</div>
+				</div>
+			</a>
+			<a href="contact.html">
+				<div class="contact-us fr">
+					<div class="txt fr">
+						<p>
+							<span class="f-22">联</span><span class="f-14">系我们</span>
+
+						</p>
+						<p class="f-8">Contact us</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		<script src="style/js/jquery.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui("#slider").slider({
+				interval: 3000
+			});
+		</script>
+	</body>
+
+</html>

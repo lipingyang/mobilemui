@@ -1,0 +1,53 @@
+.logo{
+	width: 100%;
+	height: 10%;
+	background:url(../img/smallLogo.png) no-repeat;
+	background-size:100px 100%;
+	font-size: 20px;
+	text-align: center;
+	background-color: #fff;
+	font-weight: bold;
+}
+.slide-one{
+	background: url(../img/slideOne.png) no-repeat;
+	background-size: 100% 100%;
+}
+.slide-two{
+	background: url(../img/slideTwo.png) no-repeat;
+	background-size: 100% 100%;
+}
+.slide-three{
+	background: url(../img/slideThree.png) no-repeat;
+	background-size: 100% 100%;
+}
+.slide-four{
+	background: url(../img/slideFour.png) no-repeat;
+	background-size: 100% 100%;
+}
+.slide-five{
+	background: url(../img/slideFive.png) no-repeat;
+	background-size: 100% 100%;
+}
+.slide-six{
+	background: url(../img/slideSix.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*按钮以及文字*/
+.check-detail{
+	width: 150px;
+	height: 30px;
+	background: #fff;
+	text-align: center;
+	line-height: 30px;
+	color: #50a7f6;
+	margin: 0 auto;
+	position: absolute;bottom: 15px;left: 50%;
+	margin-left: -75px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #fff;
+}
+.slide-introduce{
+	position: absolute;bottom: 50px;left: 50%;
+	color: #fff;
+	width: calc(95%);
+}

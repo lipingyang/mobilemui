@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<title>鼎永科技-产品中心</title>
+		<link rel="stylesheet" href="style/css/contact.css" />
+		<link rel="stylesheet" href="style/css/base.css" />
+		<script src="style/js/mui.min.js"></script>
+		<script src="style/js/jquery.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+		<a href="index.html">
+			<div class="logo">
+				<span>联系我们</span>
+			</div>
+		</a>
+		<div class="contact-content">
+			<div class="content-one">
+				<div class="content-middle-top">
+					<div class="btn fr">导 航</div>
+					<div class="map fl"></div>
+				</div>
+			</div>
+			<div class="content-two">
+				<div class="content-middle">
+					<p>杭州市拱墅区新文路33号天堂e谷2幢501</p>
+				</div>
+			</div>
+			<div class="content-three">
+				<div class="content-middle">
+					<p>http://www.zjdykj.com</p>
+				</div>
+			</div>
+			<div class="content-four">
+				<div class="content-middle">
+					<p>0571-87389293</p>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript" charset="utf-8">
+			var height = $(".logo").height();
+			b = height + "px";
+			$(".logo").css("line-height", b); //logo行高
+			
+			var span_height=$(".content-middle").height()+"px";
+			$(".content-middle").css("line-height", span_height);
+			var btn_height=$(".btn").height()+"px";
+			$(".btn").css("line-height", btn_height);
+		</script>
+	</body>
+
+</html>

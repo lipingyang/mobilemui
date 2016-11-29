@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<title>鼎永科技-产品中心</title>
+		<link rel="stylesheet" href="style/css/mui.min.css">
+		<link rel="stylesheet" href="style/css/product.css" />
+		<link rel="stylesheet" href="style/css/base.css" />
+		<link rel="stylesheet" href="style/css/swiper.min.css" />
+		<script src="style/js/mui.min.js"></script>
+		<script src="style/js/jquery.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+		<style>
+			.swiper-container {
+				width: 100%;
+				height:80%;
+				margin: 20px auto;
+				font-size: 14px;
+			}
+			@media screen and (max-width: 330px) {
+				.slide-introduce{
+					font-size: 10px;
+					bottom:40px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<a href="index.html">
+			<div class="logo">
+				<span>产品中心</span>
+			</div>
+		</a>
+		<!--轮播图-->
+         <!-- Swiper -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide swiper-no-swiping slide-one">
+					<p class="slide-introduce">
+						集信息标准规范、同意身份认证、数据共享中心、
+                                            个人应用门户、公共通讯集成于一体
+					</p>
+					<div class="check-detail">查看详情</div>
+				</div>
+				<div class="swiper-slide swiper-no-swiping slide-two">
+					<p class="slide-introduce">
+						集内部邮件、通知公告、公文管理、投票管理 任务安排、固定资产管理等于一体
+					</p>
+					<div class="check-detail">查看详情</div>
+				</div>
+				<div class="swiper-slide swiper-no-swiping slide-three">
+					<p class="slide-introduce">
+						集内部邮件、通知公告、公文管理、投票管理 任务安排、固定资产管理等于一体
+					</p>
+					<div class="check-detail">查看详情</div>
+				</div>
+				<div class="swiper-slide swiper-no-swiping slide-four">
+					<p class="slide-introduce">
+						集分班管理、学籍管理、选考科目报名、考务管理 成绩管理、学分管理、文印管理等于一体
+					</p>
+					<div class="check-detail">查看详情</div>
+				</div>
+				<div class="swiper-slide swiper-no-swiping slide-five">
+					<p class="slide-introduce">
+						集教学大数据、学生大数据、教师大数据于一体
+					</p>
+					<div class="check-detail">查看详情</div>
+				</div>
+				<div class="swiper-slide swiper-no-swiping slide-six">
+					<p class="slide-introduce">
+						集教学大数据、学生大数据、教师大数据于一体
+					</p>
+					<div class="check-detail">查看详情</div>
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+
+		<script src="style/js/swiper.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			var height = $(".logo").height();
+			b = height + "px";
+			$(".logo").css("line-height", b);//logo行高
+            //按钮
+            var btnwidth=$(".slide-introduce").width();
+            var btnwidth_a=btnwidth/2;
+            $(".slide-introduce").css("margin-left", -btnwidth/2.5);
+            //轮播图
+            var width_swiper = $(".swiper-slide").width() * 0.83116276;
+			var swiper_pianyi = width_swiper * 0.1;
+			var swiper_pianyi_button = width_swiper * 0.1 ;
+			$(".swiper-button-next").css("width", swiper_pianyi_button)
+			$(".swiper-button-prev").css("width", swiper_pianyi_button)
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				slidesPerView: 1.2,
+				paginationClickable: true,
+				spaceBetween: 10,
+//				freeMode: true,
+				loop: true,
+				slidesOffsetBefore: swiper_pianyi
+			});
+			
+			
+//			查看详情跳转
+            $(".check-detail").click(function(){
+            	window.location.href = "cultureAmend.html"
+            })
+		</script>
+	</body>
+
+</html>

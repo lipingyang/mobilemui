@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<title>鼎永科技-案例分享</title>
+		<link rel="stylesheet" href="style/css/mui.min.css">
+		<link rel="stylesheet" href="style/css/case.css" />
+		<link rel="stylesheet" href="style/css/base.css" />
+		<link rel="stylesheet" href="style/css/swiper.min.css" />
+		<script src="style/js/mui.min.js"></script>
+		<script src="style/js/jquery.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+		<style>
+			html,
+			body {
+				position: relative;
+				height: 100%;
+			}
+			
+			body {
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.swiper-container {
+				width: 100%;
+				height: 85%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<a href="index.html">
+			<div class="logo">
+				<span>案例分享</span>
+			</div>
+		</a>
+		<div class="case-title">案例数量</div>
+		<!--轮播图-->
+		<div class="pic-box">
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide case-one">
+						<div class="slide-txt">
+							<div class="txt-ting fl">教育厅</div>
+							<div class="txt-number fr">
+								<img src="style/img/txtBg.png" />
+								<span>32</span>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide case-two">
+						<div class="slide-txt">
+							<div class="txt-ting fl">教育厅</div>
+							<div class="txt-number fr">
+								<img src="style/img/txtBg.png" />
+								<span>32</span>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide case-three">
+						<div class="slide-txt">
+							<div class="txt-ting fl">教育厅</div>
+							<div class="txt-number fr">
+								<img src="style/img/txtBg.png" />
+								<span>32</span>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide case-four">
+						<div class="slide-txt">
+							<div class="txt-ting fl">教育厅</div>
+							<div class="txt-number fr">
+								<img src="style/img/txtBg.png" />
+								<span>32</span>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide case-five">
+						<div class="slide-txt">
+							<div class="txt-ting fl">教育厅</div>
+							<div class="txt-number fr">
+								<img src="style/img/txtBg.png" />
+								<span>3200</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--底部文字-->
+			<div class="txt"></div>
+		</div>
+
+		<script src="style/js/swiper.min.js"></script>
+		<script src="style/js/case.js"></script> <!--轮播js-->
+		<script>
+			var height = $(".logo").height();
+			b = height + "px";
+			$(".logo").css("line-height", b); //logo行高
+
+             $(".swiper-slide").click(function(){
+            	window.location.href = "cultureAmend.html"
+            })
+		</script>
+	</body>
+
+</html>
